@@ -1,0 +1,71 @@
+:root {
+    --title: #333;
+    --background: #ededed;
+    --button-border: #333;
+    --button: #555;
+    --button-hover: #444;
+    --button-active: #333;
+    --border: rgb(219, 219, 219);
+    --border-main: #222;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 62.5%;
+    line-height: 1.6;
+}
+
+body {
+    background-color: var(--background);
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+header {
+    margin-top: 3rem;
+    padding: 2rem;
+    font-size: 3.2rem;
+}
+
+h1 {
+    line-height: 1.2;
+}
+
+.title {
+    color: var(--title);
+}
+
+.container {
+    padding: 1rem;
+}
+
+.grid {
+    display: grid;
+    max-width: 500px;
+    min-height: 500px;
+    margin: 2rem auto;
+    border: 2px solid var(--border-main);
+}
+
+.grid-element {
+    border: 0.01rem solid var(--border);
+    background-color: var(--background);
+}
+
+@media (max-width: 450px) {
+    header {
+        font-size: 2.4rem;
+    }
+    .grid {
+        max-width: 300px;
+        min-height: 300px;
+    }
+}
